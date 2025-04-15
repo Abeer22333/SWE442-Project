@@ -7,14 +7,32 @@ public class GradeCalculator {
         System.out.print("Enter student's name: ");
         String name = input.nextLine();
 
-        System.out.print("Enter score for Quiz (out of 10): ");
-        double quiz = input.nextDouble();
+        double quiz;
+        do {
+            System.out.print("Enter score for Quiz (out of 10): ");
+            quiz = input.nextDouble();
+            if (quiz < 0) {
+                System.out.println("Invalid input. Score cannot be negative.");
+            }
+        } while (quiz < 0);
 
-        System.out.print("Enter score for Midterm (out of 30): ");
-        double midterm = input.nextDouble();
+        double midterm;
+        do {
+            System.out.print("Enter score for Midterm (out of 30): ");
+            midterm = input.nextDouble();
+            if (midterm < 0) {
+                System.out.println("Invalid input. Score cannot be negative.");
+            }
+        } while (midterm < 0);
 
-        System.out.print("Enter score for Final Exam (out of 60): ");
-        double finalExam = input.nextDouble();
+        double finalExam;
+        do {
+            System.out.print("Enter score for Final Exam (out of 60): ");
+            finalExam = input.nextDouble();
+            if (finalExam < 0) {
+                System.out.println("Invalid input. Score cannot be negative.");
+            }
+        } while (finalExam < 0);
 
         double total = quiz + midterm + finalExam;
 
