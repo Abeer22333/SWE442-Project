@@ -35,10 +35,12 @@ public class GradeCalculator {
         } while (finalExam < 0);
 
         double total = quiz + midterm + finalExam;
+        double average = total / 3;
 
         System.out.println("\n--- Report ---");
         System.out.println("Student: " + name);
         System.out.println("Total Score: " + total + " / 100");
+        System.out.println("Average Score: " + average);
 
         if (total >= 90) {
             System.out.println("Grade: A");
