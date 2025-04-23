@@ -11,8 +11,8 @@ It also includes input validation to prevent entering negative values.
 
 Student Information
 
-- Abeer Mohammed AlRuwaili  
-- Amal Abdullah AlSerhani
+- Abeer Mohammed Alruwaili  
+- Amal Abdullah Alsirhani
 
 ---
 
